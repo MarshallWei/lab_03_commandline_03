@@ -15,7 +15,7 @@ This lab will review downloading and uncompressing files, and it will get us set
 
 Write the command that you used to do this below:
 ----------
-
+~
 
 
 ==========
@@ -23,6 +23,10 @@ Write the command that you used to do this below:
 
 Write the command that you used to do this - as well as its output - below :
 ----------
+student$ pwd
+/Users/student
+ent-v314-010:~ student$ 
+
 
 
 
@@ -31,6 +35,38 @@ Write the command that you used to do this - as well as its output - below :
 
 Write the command(s) that you used to determine this - as well as its output - below:
 ----------
+ent-v314-010:~ student$ ls -a
+.			.eclipse		Downloads
+..			.flexlmrc		Library
+.CFUserTextEncoding	.gitconfig		MPLABXProjects
+.DS_Store		.gnome2			Movies
+.IdentityService	.local			Music
+.ServiceHub		.macports		New Unity Project
+.Trash			.matlab			Pictures
+.Xauthority		.mono			Public
+.adobe			.mplabcomm		QLData
+.anaconda		.mysql_history		Things
+.android		.nuget			aardvark
+.atom			.oracle_jre_usage	ipe.properties
+.bash_history		.rnd			isus
+.bash_profile		.subversion		mtec1003-lab-03
+.bash_sessions		.thumbnails		mtec1003-lab-03.tar.gz
+.cache			Adlm			pymel.log
+.config			Adobe			stuff
+.continuum		Applications		xgen
+.dotnet			Desktop
+.eaglerc		Documents
+ent-v314-010:~ student$ ld
+ld: no object files specified
+ent-v314-010:~ student$ ls
+Adlm			Movies			ipe.properties
+Adobe			Music			isus
+Applications		New Unity Project	mtec1003-lab-03
+Desktop			Pictures		mtec1003-lab-03.tar.gz
+Documents		Public			pymel.log
+Downloads		QLData			stuff
+Library			Things			xgen
+MPLABXProjects		aardvark
 
 
 
@@ -66,14 +102,19 @@ This command should have a *flag* to specify the output file.  MAKE SURE TO NAME
 Write the command(s) that you used to download this file - as well as its output - below:
 ----------
 
-
+curl: try 'curl --help' or 'curl --manual' for more information
+ent-v314-010:~ student$ curl -o steel http://foureyes.github.io/mtec1002-spring2014/labs/03/mtec1002-lab-03.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   178  100   178    0     0   6137      0 --:--:-- --:--:-- --:--:--  6137
 
 ==========
 7.  Uncompress the file that you just downloaded.
 
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
-
+tar -xvf steel.tar.gz
+tar: Error opening archive: Failed to open 'steel.tar.gz'
 
 
 ==========
