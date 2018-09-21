@@ -129,7 +129,16 @@ Otherwise...
 
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
+ent-v314-011:~ student$cd ~
+ent-v314-011:~ student$ ls
 
+Adlm            Library            QLData            isus            somethinknmn.png
+Adobe            MPLABXProjects        Things            mtec1002        steel
+Applications        Movies            animals            mtec1003-lab-03        stuff
+Desktop            Music            d            mtec1003-lab-03.tar.gz    sum.tar.gz
+Documents        New Unity Project    drills.py        pizza            text.txt
+Downloads        Pictures        google.html        pop            xgen
+Dude            Public            ipe.properties        pymel.log
 
 
 ==========
@@ -137,7 +146,8 @@ Write the command(s) that you used to do this - as well as its output - below:
 
 Write the command(s) that you used to determine this - as well as its output - below:
 ----------
-
+ls mtec1002-lab-03
+aardvark    animals        foo        food        lemon        pineapple
 
 
 ==========
@@ -146,8 +156,9 @@ Write the command(s) that you used to determine this - as well as its output - b
 Write the command(s) (including going home) that you used to do this below:
 ----------
 
-
-
+cd ~
+cd 
+ped
 ==========
 11.  Write the files that are in the science fiction directory below.
 
@@ -161,7 +172,8 @@ Write the command(s) that you used to do this - as well as its output - below:
 
 Write the command(s) that you used to do this below:
 ----------
-
+cd ~
+pwd
 ==========
 OPTIONAL
 13. Immediately change back to the mtec1002-lab-03 folder with a single command using a *relative* path.
