@@ -254,9 +254,15 @@ Cat shows all the content of a file, making it useful if you want a thorough run
 ==========
 21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
 ----------
-cat books/other/pg1232.txt
 
+I used this command to find how many words are in the file.
+ wc books/other/pg1232.txt
+  5063  52639 305864 books/other/pg1232.txt
 
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
+I used this command to find how many lines are in the file.
+wc -l books/other/pg1232.txt
+5063 books/other/pg1232.txt
+There are 5063 lines in the book.
