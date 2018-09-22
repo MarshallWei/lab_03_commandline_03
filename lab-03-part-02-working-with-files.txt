@@ -36,7 +36,9 @@ $ touch foo.txt
 $ ls
 Copy and paste the output below.
 ----------
-
+Wendy@WorkStation MINGW64 ~/my_files
+$ ls
+foo.txt
 
 
 ==========
@@ -44,7 +46,9 @@ Copy and paste the output below.
 
 $ touch bar.txt
 ----------
-
+Wendy@WorkStation MINGW64 ~/my_files
+$ ls
+bar.txt  foo.txt
 
 
 ==========
@@ -52,7 +56,10 @@ $ touch bar.txt
 
 Copy and paste the output below.
 ----------
-
+ ls -l
+total 0
+-rw-r--r-- 1 Wendy 197609 0 Sep 20 22:24 bar.txt
+-rw-r--r-- 1 Wendy 197609 0 Sep 20 22:22 foo.tx
 
 
 ==========
@@ -61,7 +68,11 @@ Copy and paste the output below.
 
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
 ----------
+.cp bar.txt baz.txt
 
+Wendy@WorkStation MINGW64 ~/my_files
+$ ls
+bar.txt  baz.txt  foo.txt
 
 
 ==========
@@ -69,13 +80,23 @@ Write the command that you used to copy the file.  Additionally, copy and paste 
 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
 ----------
-==========
+rm -f bar.txt
+
+Wendy@WorkStation MINGW64 ~/my_files
+$ ls
+baz.txt  foo.txt
 11. Move the file called foo.txt to qux.txt and then list the files again.
 
 
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
 ----------
+mkdir qux.txt
 
+Wendy@WorkStation MINGW64 ~/my_files
+$ mv foo.txt qux.txt
+Wendy@WorkStation MINGW64 ~/my_files
+$ ls
+baz.txt  qux.txt/
 
 
 ==========
@@ -90,7 +111,8 @@ Write the command that you used to move the file.  Copy and paste the output of 
 
 Write out the command that you used and what happened.
 ----------
-
+rmdir my_files
+This file was deleted.
 
 
 ==========
@@ -98,7 +120,8 @@ Write out the command that you used and what happened.
 
 Write out the command that you used and what happened.
 ----------
-
+rm my_files
+rm: cannot remove 'my_files': Is a directory
 
 
 ==========
