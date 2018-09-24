@@ -17,7 +17,9 @@ We're going to be writing a shell script.  First, though... let's figure out wha
 
 What command did you use, and what was its output?
 ----------
-
+student$ date
+Mon Sep 24 15:48:44 EDT 2018
+ent-v314-009:~ student$ 
 
 
 ==========
@@ -25,6 +27,16 @@ What command did you use, and what was its output?
 
 What command did you use, and what was its output?
 ----------
+student$ cal
+   September 2018     
+Su Mo Tu We Th Fr Sa  
+                   1  
+ 2  3  4  5  6  7  8  
+ 9 10 11 12 13 14 15  
+16 17 18 19 20 21 22  
+23 24 25 26 27 28 29  
+30                    
+ent-v314-009:~ student$ 
 
 
 
@@ -33,6 +45,10 @@ What command did you use, and what was its output?
 
 What commands did you use to do this?
 ----------
+ent-v314-009:~ student$ pwd
+/Users/student
+ent-v314-009:~ student$ 
+
 
 
 
@@ -41,6 +57,24 @@ What commands did you use to do this?
 
 What commands did you use to do this?
 ----------
+student$ touch copy_to_backup.sh
+ent-v314-009:~ student$ ls
+Adlm				QLData
+Adobe				Things
+Applications			copy_to_backup.sh
+Desktop				ipe.properties
+Documents			isus
+Downloads			keychains
+Library				lightroom
+MPLABXProjects			mtec1002-lab-02.tar.gz
+Morgana.png			mtec1002-lab-03
+Morgana.tar			mtec1002-lab-03.tar.gz
+Movies				mtec1002-lab-03.tar.gz.cpgz
+Music				pymel.log
+New Unity Project		stuff
+Pictures			xgen
+Public
+ent-v314-009:~ student$ 
 
 
 
@@ -49,14 +83,16 @@ What commands did you use to do this?
 
 What command did you use to find the permissions?
 ----------
-
-
+ls-lat
+-rw-r--r--   1 student  staff       0 Sep 24 15:51 copy_to_backup.sh
 
 ==========
 6. Change the permissions so that this file is executable by the user.  Verify the new permissions.
 
 What commands did you use to do this?  What was the output?
 ----------
+ent-v314-009:~ student$ chmod o+w copy_to_backup.sh
+ent-v314-009:~ student$ 
 
 
 
@@ -67,14 +103,17 @@ $ ./copy_to_backup.sh
 
 What command did you use to try to execute the file?  What happens?
 ----------
+ent-v314-009:~ student$ sh copy_to_backup.sh
+ent-v314-009:~ student$ 
 
-
+After this the file was executed.
 
 ==========
 8. Open the file with nano
 
 What command did you use to do this?
 ----------
+nano copy_to_backup.sh
 
 
 
@@ -87,8 +126,12 @@ c. print out "I'm done backing up"
 
 Write out the code in your file below...
 ----------
-
-
+ent-v314-009:~ student$ ent-v314-009:~ student$ sh copy_to_backup.sh
+ent-v314-009:~ student nano copy_to_backup.sh
+mkdir-p  backup
+cp *.txt
+echo "I'm done backing up"
+I'm done backing up
 
 ==========
 10. Create a directory in your home called test
@@ -98,6 +141,11 @@ Write out the code in your file below...
 
 What commands did you use to do this?
 ----------
+mkdir test
+cd test
+touch 1.txt
+touch 2.txt
+
 
 
 
@@ -106,7 +154,7 @@ What commands did you use to do this?
 
 What commands did you use to do this?
 ----------
-
+mv copy_to_backup.sh test
 
 
 ==========
@@ -114,7 +162,7 @@ What commands did you use to do this?
 
 What commands did you use to do this?
 ----------
-
+student$ sh copy_to_backup.sh
 
 
 ==========
@@ -122,3 +170,18 @@ What commands did you use to do this?
 
 What commands did you use to do this?  Show the output.
 ----------
+Adlm				QLData
+Adobe				Things
+Applications			copy_to_backup.sh
+Desktop				ent-v314-009:~
+Documents			ipe.properties
+Downloads			isus
+Library				keychains
+MPLABXProjects			lightroom
+Morgana.png			mtec1002-lab-02.tar.gz
+Morgana.tar			mtec1002-lab-03
+Movies				mtec1002-lab-03.tar.gz
+Music				mtec1002-lab-03.tar.gz.cpgz
+New Unity Project		pymel.log
+Pictures			stuff
+Public				xgen
